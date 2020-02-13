@@ -6,8 +6,7 @@ const cards = document.querySelectorAll('.card');
 
 
 for(let card of cards)
-{
-  // chama a função function quando o evento click é detectado no card
+{ // chama a função function quando o evento click é detectado no card
   card.addEventListener("click", function()
   {
     const videoId = card.getAttribute("id");
