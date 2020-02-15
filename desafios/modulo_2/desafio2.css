@@ -103,58 +103,119 @@ header{
   transition: color 200 ms;
 }
 
-
-
-
 .cards{
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 190px;
+  text-align: center;
+  height: 400px;
 }
 
 .image-container img{
-  width: 100%;
-}
+  width: 400px;
+  height: 300px;
+} 
 
-.card__info{
-  padding: 10px;
-  text-align: center;
-  max-width: max-content;
-}
+
+
 .card__info{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 20px auto;
 }
 
-/*
-
-.card__price{
-  background-color: var(--color-green);
-  filter: brightness(90%);
-  height: 24px;
-  padding: 5px 20px;
-  border-radius: 20px;
+.card__info{
+  height: 100px;
+  padding: 10px;
   text-align: center;
-  margin-left: 4px;
+  
 }
- */
-
 .card__info p{
-  font-size:20px;
+  color: black;
+  font-size:30px;
   font-weight: 900;
-  text-align:center;
 }
 
 .card__modules{
   font-size:20px;
   font-weight: 900;
-  text-align:center;
 }
 .card__price{
   font-size:20px;
   font-weight: 900;
-  text-align:center;
 }
 
+.modal-overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal{
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal.maximize{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* .modal.minimize{
+  background-color: white;
+  width: 0%;
+  height: 0%;
+  margin: 0 auto;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+} */
+
+.modal .close-modal{
+  color: black;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  cursor: pointer;/*muda de seta para mãozinha quando a seta está sob elemento*/
+}
+
+.modal .maximize-modal{
+  color: black;
+  position: absolute;
+  right: 44px;
+  top: 11px;
+  cursor: pointer;/*muda de seta para mãozinha quando a seta está sob elemento*/
+}
+
+.modal .minimize-modal{
+  color: black;
+  position: absolute;
+  right: 74px;
+  top: 5px;
+  cursor: pointer;/*muda de seta para mãozinha quando a seta está sob elemento*/
+}
+
+/* ==== MODAL.ACTIVE==== */
+
+.modal-overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe{
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+
+}
