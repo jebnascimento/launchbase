@@ -102,3 +102,59 @@ header{
   color: white;
   transition: color 200 ms;
 }
+
+
+
+
+.cards{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 190px;
+}
+
+.image-container img{
+  width: 100%;
+}
+
+.card__info{
+  padding: 10px;
+  text-align: center;
+  max-width: max-content;
+}
+.card__info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*
+
+.card__price{
+  background-color: var(--color-green);
+  filter: brightness(90%);
+  height: 24px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 4px;
+}
+ */
+
+.card__info p{
+  font-size:20px;
+  font-weight: 900;
+  text-align:center;
+}
+
+.card__modules{
+  font-size:20px;
+  font-weight: 900;
+  text-align:center;
+}
+.card__price{
+  font-size:20px;
+  font-weight: 900;
+  text-align:center;
+}
+
